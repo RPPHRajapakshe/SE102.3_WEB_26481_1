@@ -1,0 +1,23 @@
+ 
+<html>
+<head>
+<body>
+  <button onclick="x()">Google</button>
+</body>
+<script>
+    function x()
+    {
+      var input = window.confirm("Are you sure?");
+      if (input) 
+      {
+        window.location.href = "https://www.google.com";
+      } 
+     else 
+     {
+        alert("You decided to stay.");
+      }
+    }
+  </script>
+</head>
+</html>
+

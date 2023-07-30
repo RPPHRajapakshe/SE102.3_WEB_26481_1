@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+  <script>
+    function extractYearOfBirthFromNIC() {
+      var nicNumber = prompt("Enter the NIC number (e.g., 1234567890123):");
+
+      if (nicNumber.length !== 13) {
+        alert("Invalid NIC number. Please enter a valid 13-digit NIC number.");
+        return;
+      }
+
+      var yearDigits = nicNumber.substr(0, 2);
+      var yearPrefix = (yearDigits < 22) ? "19" : "20";
+      var yearOfBirth = yearPrefix + yearDigits;
+
+      alert("Year of Birth: " + yearOfBirth);
+    }
+
+    extractYearOfBirthFromNIC();
+  </script>
+</body>
+</html>
